@@ -114,30 +114,32 @@
 
 			<div class="checkout-box">
 
-				<h2>Contact Us</h2>
+				<h2>Контакты</h2>
 
-				<p>If you would like to send us an email please fill out the form below.</p>
+				<p>Если вы хотите связаться с нами прямо сейчас, заполните эту форму.</p>
 
 				<form action="checkout-2.html" method="post">
+					<div class="form-group has-error">
+						<label class="control-label">Имя <span class="mand">*</span></label>
+						<input class="form-control" type="text" name="username">
+						<span class="help-inline">Something may have gone wrong</span>
+					</div>
 
-					<p>
-						<label for="field-name">Name <span class="mand">*</span></label>
-						<input type="text" id="field-name" name="field-name" />
-					</p>
 
-					<p>
-						<label for="field-email">Email <span class="mand">*</span></label>
-						<input type="text" id="field-email" name="field-email" />
-					</p>
+					<div class="form-group">
+						<label class="control-label">Почта <span class="mand">*</span></label>
+						<input class="form-control" type="text" name="email">
+						<span class="help-inline">Something may have gone wrong</span>
+					</div>
 
-					<p>
-						<label for="field-message">Message <span class="mand">*</span></label>
-						<textarea id="field-message" name="field-message"></textarea>
-					</p>
+					<div class="form-group">
+						<label class="control-label">Сообщение <span class="mand">*</span></label>
+						<textarea name="message"></textarea>
+					</div>
 
-					<p class="buttons">
+					<div class="form-group">
 						<button class="btn btn-primary" type="submit">Send</button>
-					</p>
+					</div>
 
 				</form>
 
@@ -149,20 +151,21 @@
 
 			<div class="checkout-box">
 
-				<h2>Where Are We?</h2>
+				<h2>Где мы?</h2>
 
 				<p class="address">
-					Address 1<br />
-					Address 2<br />
-					City<br />
-					County<br />
-					Postcode<br />
-					Country
+					Россия,<br />
+					Москва,<br />
+					улица Толстых Партизан,<br />
+					дом 42,<br>
+					офис 501
+					160000<br />
+					
 				</p>
 
-				<h2>Or Call Us...</h2>
+				<h2>Звоните:</h2>
 
-				<p class="tel"><a href="tel:01010 101 0100">01010 101 0100</a></p>
+				<p class="tel"><a href="tel:01010 101 0100">+7(495)-222-32-02</a></p>
 
 			</div>
 
