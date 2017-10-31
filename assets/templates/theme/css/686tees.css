@@ -942,7 +942,20 @@ h1.catalogue-title a:hover {
 .controls textarea {
 	width: 100%;
 }
+/*
 
+*/
+.eFiltr_form label{
+	cursor:pointer;
+	padding-left:20px;
+	position:relative;
+}
+.eFiltr_form input[type=checkbox]{
+	margin-top:2px;
+}
+.eFiltr_form  .checkbox-input input{
+
+}
 /*--------------------------------
 	Footer
 ---------------------------------*/
