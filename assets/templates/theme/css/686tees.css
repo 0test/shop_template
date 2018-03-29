@@ -21,7 +21,8 @@ a:hover,
 	text-decoration: none;
 }
 .header_row{
-	margin-top: 15px;
+	margin: 10px;
+	margin-top:15px;
 }
 /*--------------------------------
 	Buttons
@@ -125,7 +126,7 @@ input[type="color"],
 	font-family: "Merriweather";
 	font-size: 24px;
 	color: #999;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 20px;
 	display: block;
     margin-top: -20px;
@@ -155,16 +156,19 @@ input[type="color"],
 
 .mini-basket {
 	background: #EEE;
-	padding: 20px 20px 0 20px;
+
 	margin-bottom: 10px;
+		background: none;
+		padding: 0;
+		margin-bottom: 0;	
 }
 
 .mini-basket-title {
 	font-family: "Merriweather";
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.5;
-	margin-right: 20px;
 	margin-bottom: 10px;
+	text-align:right;
 }
 
 .mini-basket-title a {
@@ -186,7 +190,10 @@ input[type="color"],
 }
 
 .mini-basket-summary {
-	font-weight: bold;
+    text-align: right;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .mini-basket-summary span {
@@ -313,6 +320,15 @@ h5 {
 	font-weight: 400;
 	line-height: 2;
 	border-bottom: 1px solid #E6E6E6;
+	margin-bottom: 10px;
+}
+
+.eFiltr_form h4 {
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 2;
+	border-bottom:  none;
 	margin-bottom: 10px;
 }
 
@@ -974,10 +990,23 @@ h1.catalogue-title a:hover {
     height: 18px;
     line-height: 18px;
 }
+.slider_text{
+	margin-bottom:1em;
+}
+.slider_text span{
+	font-weight:700;
+}
+#slider1{
+	height:6px;
+	border: 1px solid #777;
+}
 
-
-
-
+#slider1 .ui-widget-header{
+	background:#bbb;
+}
+#slider1{
+   
+}
 
 
 
@@ -1025,13 +1054,7 @@ h1.catalogue-title a:hover {
 @media (min-width: 750px) {
 
 	.logo {
-		text-align: left;
-		margin-bottom: 0;
-		bottom: 0;
-	    position: absolute;
-	    left: 30px;
-	    display: block;
-	    height: 20px;
+
 	}
 
 	.top-nav {
@@ -1063,15 +1086,9 @@ h1.catalogue-title a:hover {
 		margin-top: 10px;
 	}
 
-	.mini-basket {
-		background: none;
-		padding: 0;
-		margin-bottom: 0;
-	}
 
 	.mini-basket-title {
 		margin-right: 0;
-		margin-bottom: 0;
 	}
 
 	.checkout-steps .step {
